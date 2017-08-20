@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TITLE</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static "css/material.min.css" %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="{% static "css/easy-autocomplete.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/easy-autocomplete.themes.min.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<script src="{% static "js/jquery.min.js" %}"></script>
+	<script src="{% static "js/material.min.js" %}"></script>
+	<script src="{% static "js/jquery.easy-autocomplete.min.js"%}"></script>
+	<script src="{% static "js/script.js"%}"></script>
+</head>
+<body>
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		{% include "header.html" %}
+		<main class="mdl-layout__content">
+		    <div class="page-content">
+		        {% block content %}
+		        {% endblock %}
+		    </div>
+	  	</main>
+	</div>
+	
+	
+	
+</body>
+</html>

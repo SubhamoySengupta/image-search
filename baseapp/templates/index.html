@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+	
+{% block content %}
+<div class="mdl-grid">
+	<div class="container l mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+	  <div class="mdl-card__title">
+	  	<input id="search-bar"/>
+	  </div>
+	  <div id="img-div"></div>
+	</div>
+	<div class="container r mdl-card mdl-shadow mdl-cell mdl-cell--8-col">
+	  	<div id="di">
+	  	<div class="mdl-card da1 mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+	  	  <div class="mdl-card__title s">  
+		  	<h2 class="mdl-card__title-text">Similar Images</h2>
+		  </div>
+		  <div class="mdl-cell mdl-cell--12-col similars">
+				
+		  </div>		
+	  	</div>
+	  	<div class="mdl-card da2 mdl-shadow--2dp mdl-cell mdl-cell--12-col">
+	  	  <div class="mdl-card__title p">  
+		  	<h2 class="mdl-card__title-text">Parameters</h2>
+		  </div>
+		  <div class="color">
+			Colors
+		  	<div class="bar">
+		  		<div class="p">75</div>
+		  		<div class="s">25</div>
+		  	</div>
+		  </div>
+		  <div class="time">Loading Time
+			<div class="t">1.0 secs</div>
+		  </div>
+	  	</div>
+	  	</div>
+	</div>
+
+</div>
+{% endblock %}
+
+
